@@ -1,0 +1,65 @@
+---
+import Navigation from "../components/Navigation.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Daniel Bogdanov</title>
+  </head>
+  <body>
+    <Navigation />
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>
+
+<style is:global>
+  @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+  html {
+    font-family: "Lato", serif;
+  }
+
+  :root {
+    --bg-color: #fafaf9;
+    --primary-color: #0c0a09;
+    --secondary-color: #44403c;
+    --other-color: #a8a29e;
+  }
+
+  .dark {
+    --bg-color: #0c0a09;
+    --primary-color: #fafaf9;
+    --secondary-color: #d6d3d1;
+    --other-color: #57534e;
+  }
+
+  body {
+    background-color: var(--bg-color);
+  }
+
+  h1,
+  h2,
+  h3 {
+    color: var(--primary-color);
+  }
+
+  p,
+  a {
+    color: var(--secondary-color);
+  }
+
+  a:hover {
+    color: var(--primary-color);
+  }
+
+  .container {
+    @apply mx-auto w-full max-w-4xl px-4 py-8;
+  }
+</style>

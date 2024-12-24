@@ -1,0 +1,133 @@
+---
+import Layout from "../layouts/Layout.astro";
+import GitHubLogo from "../svg/github.svg";
+import LinkedInLogo from "../svg/linkedin.svg";
+import DjangoLogo from "../svg/django.svg";
+import PostgresLogo from "../svg/postgres.svg";
+import PythonLogo from "../svg/python.svg";
+import JavaScriptLogo from "../svg/javascript.svg";
+import HTMLLogo from "../svg/html.svg";
+import CSSLogo from "../svg/css.svg";
+import ReactLogo from "../svg/react.svg";
+import NodeJSLogo from "../svg/nodejs.svg";
+import ExpressLogo from "../svg/express.svg";
+import MongoDBLogo from "../svg/mongodb.svg";
+import TypeScriptLogo from "../svg/typescript.svg";
+import TailwindLogo from "../svg/tailwind.svg";
+---
+
+<Layout>
+  <div class="container">
+    <div>
+      <h1 class="text-4xl">
+        <b>Hey, I'm Daniel.</b>
+        <span class="block text-2xl text-other-color">
+          I'm a software developer from Sofia.
+        </span>
+      </h1>
+      <div class="mt-4 flex gap-4 text-lg">
+        <a
+          href="https://github.com/DanieII"
+          class="group flex items-center gap-1 text-secondary-color"
+        >
+          <GitHubLogo class="group-hover:fill-primary-color" />
+          GitHub
+        </a>
+        <a
+          href="https://www.linkedin.com/in/daniel-bogdanov-6958ba258/"
+          class="group flex items-center gap-1 text-secondary-color"
+        >
+          <LinkedInLogo class="group-hover:fill-primary-color" />
+          LinkedIn
+        </a>
+      </div>
+    </div>
+    <div class="mt-16">
+      <h2 class="mb-4 text-3xl">Personal Projects</h2>
+      <p class="mb-8 text-xl">
+        Below is a selection of projects that I've worked on. You can find more
+        on my <a href="https://github.com/DanieII" class="underline">GitHub</a>.
+      </p>
+      <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
+        <div class="group rounded-lg bg-other-color px-10 py-12">
+          <h3 class="text-xl">Rocco Woodwork</h3>
+          <p class="mb-4">An E-commerce website for wooden products.</p>
+          <div class="flex gap-4 grayscale group-hover:grayscale-0">
+            <div class="has-tooltip">
+              <span class="tooltip">Django</span>
+              <DjangoLogo />
+            </div>
+            <div class="has-tooltip">
+              <span class="tooltip">Postgres</span>
+              <PostgresLogo />
+            </div>
+            <div class="has-tooltip">
+              <span class="tooltip">Python</span>
+              <PythonLogo />
+            </div>
+            <div class="has-tooltip">
+              <span class="tooltip">JavaScript</span>
+              <JavaScriptLogo />
+            </div>
+            <div class="has-tooltip">
+              <span class="tooltip">HTML</span>
+              <HTMLLogo />
+            </div>
+            <div class="has-tooltip">
+              <span class="tooltip">CSS</span>
+              <CSSLogo />
+            </div>
+          </div>
+        </div>
+        <div class="group rounded-lg bg-other-color px-10 py-12">
+          <h3 class="text-xl">Bulgaria Trails</h3>
+          <p class="mb-4">Explore Bulgaria's hiking trails.</p>
+          <div class="flex gap-4 grayscale group-hover:grayscale-0">
+            <div class="has-tooltip">
+              <span class="tooltip">React</span>
+              <ReactLogo />
+            </div>
+            <div class="has-tooltip">
+              <span class="tooltip">NodeJS</span>
+              <NodeJSLogo />
+            </div>
+            <div class="has-tooltip">
+              <span class="tooltip">Express</span>
+              <ExpressLogo />
+            </div>
+            <div class="has-tooltip">
+              <span class="tooltip">MongoDB</span>
+              <MongoDBLogo />
+            </div>
+            <div class="has-tooltip">
+              <span class="tooltip">TypeScript</span>
+              <TypeScriptLogo />
+            </div>
+            <div class="has-tooltip">
+              <span class="tooltip">JavaScript</span>
+              <JavaScriptLogo />
+            </div>
+            <div class="has-tooltip">
+              <span class="tooltip">TailwindCSS</span>
+              <TailwindLogo />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .has-tooltip {
+    position: relative;
+  }
+
+  .tooltip {
+    @apply invisible absolute left-1/2 top-full mt-2 -translate-x-1/2 text-secondary-color;
+  }
+
+  .has-tooltip:hover .tooltip {
+    @apply visible;
+  }
+</style>
