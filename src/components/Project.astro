@@ -1,0 +1,20 @@
+---
+import { Image } from "astro:assets";
+
+interface Props {
+  title: string;
+  description: string;
+  url: string;
+  image: ImageMetadata;
+}
+
+const { title, description, url, image } = Astro.props;
+---
+
+<a href={url}>
+  <div class="group rounded-lg bg-secondary-bg-color px-10 py-12">
+    <Image src={image} alt={title} class="rounded-lg" />
+    <h3 class="mt-4 text-xl">{title}</h3>
+    <p class="text-other-color">{description}</p>
+  </div>
+</a>

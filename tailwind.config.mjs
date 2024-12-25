@@ -6,6 +6,7 @@ export default {
         extend: {
             colors: {
                 "bg-color": "var(--bg-color)",
+                "secondary-bg-color": "var(--secondary-bg-color)",
                 "primary-color": "var(--primary-color)",
                 "secondary-color": "var(--secondary-color)",
                 "other-color": "var(--other-color)",
