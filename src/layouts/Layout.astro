@@ -3,81 +3,81 @@ import Navigation from "../components/Navigation.astro";
 import Footer from "../components/Footer.astro";
 
 const metaData = {
-  keywords: "Daniel Bogdanov",
-  description:
-    "Daniel Bogdanov is a Full Stack Software Engineer with experience in building web applications and bringing cool ideas to life.",
+    keywords: "Daniel Bogdanov",
+    description:
+        "Daniel Bogdanov is a Full Stack Software Engineer with experience in building web applications and bringing cool ideas to life.",
 };
 ---
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
-    <meta name="keywords" content={metaData.keywords} />
-    <meta name="description" content={metaData.description} />
-    <meta property="og:sitename" content="Daniel Bogdanov" />
-    <meta property="og:description" content={metaData.description} />
-    <meta property="og:title" content="Daniel Bogdanov" />
-    <title>Daniel Bogdanov</title>
-  </head>
-  <body>
-    <Navigation />
-    <main>
-      <slot />
-    </main>
-    <Footer />
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="generator" content={Astro.generator} />
+        <meta name="keywords" content={metaData.keywords} />
+        <meta name="description" content={metaData.description} />
+        <meta property="og:sitename" content="Daniel Bogdanov" />
+        <meta property="og:description" content={metaData.description} />
+        <meta property="og:title" content="Daniel Bogdanov" />
+        <title>Daniel Bogdanov</title>
+    </head>
+    <body>
+        <Navigation />
+        <main>
+            <slot />
+        </main>
+        <Footer />
+    </body>
 </html>
 
 <style is:global>
-  @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
-  html {
-    font-family: "Lato", serif;
-  }
+    html {
+        font-family: "Lato", serif;
+    }
 
-  :root {
-    --bg-color: #fafaf9;
-    --secondary-bg-color: #f5f5f4;
-    --primary-color: #0c0a09;
-    --secondary-color: #44403c;
-    --other-color: #78716c;
-  }
+    :root {
+        --bg-color: #fafaf9;
+        --secondary-bg-color: #f5f5f4;
+        --primary-color: #0c0a09;
+        --secondary-color: #44403c;
+        --accent-color: #78716c;
+    }
 
-  .dark {
-    --bg-color: #0c0a09;
-    --secondary-bg-color: #1c1917;
-    --primary-color: #fafaf9;
-    --secondary-color: #d6d3d1;
-    --other-color: #78716c;
-  }
+    .dark {
+        --bg-color: #0c0a09;
+        --secondary-bg-color: #1c1917;
+        --primary-color: #fafaf9;
+        --secondary-color: #d6d3d1;
+        --accent-color: #78716c;
+    }
 
-  body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: var(--bg-color);
-  }
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background-color: var(--bg-color);
+    }
 
-  h1,
-  h2,
-  h3 {
-    color: var(--primary-color);
-  }
+    h1,
+    h2,
+    h3 {
+        color: var(--primary-color);
+    }
 
-  p,
-  a {
-    color: var(--secondary-color);
-  }
+    p,
+    a {
+        color: var(--secondary-color);
+    }
 
-  a:hover {
-    color: var(--primary-color);
-  }
+    a:hover {
+        color: var(--primary-color);
+    }
 
-  .container {
-    @apply mx-auto w-full max-w-4xl px-4 py-8;
-  }
+    .container {
+        @apply mx-auto w-full max-w-4xl px-4 py-8;
+    }
 </style>

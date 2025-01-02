@@ -8,52 +8,55 @@ import AccountingPartnersImage from "../assets/images/accounting-partners.webp";
 ---
 
 <Layout>
-  <div class="container">
-    <div>
-      <h1 class="text-4xl">
-        <b>Hey, I'm Daniel.</b>
-        <span class="block text-2xl text-other-color">
-          I'm a software developer from Sofia.
-        </span>
-      </h1>
-      <div class="mt-4 flex gap-4 text-lg">
-        <a
-          href="https://github.com/DanieII"
-          class="group flex items-center gap-1 text-secondary-color"
-        >
-          <GitHubLogo class="group-hover:fill-primary-color" />
-          GitHub
-        </a>
-        <a
-          href="https://www.linkedin.com/in/daniel-bogdanov-6958ba258/"
-          class="group flex items-center gap-1 text-secondary-color"
-        >
-          <LinkedInLogo class="group-hover:fill-primary-color" />
-          LinkedIn
-        </a>
-        <a
-          href="mailto:danielbogdanov1748@gmail.com"
-          class="group flex items-center gap-1 text-secondary-color"
-        >
-          <EnvelopeIcon class="group-hover:fill-primary-color" />
-          Email
-        </a>
-      </div>
+    <div class="container">
+        <div>
+            <h1 class="text-4xl">
+                <b>Hey, I'm Daniel.</b>
+                <span class="block text-2xl text-accent-color">
+                    I'm a software developer from Sofia.
+                </span>
+            </h1>
+            <div class="mt-4 flex gap-4 text-lg">
+                <a
+                    href="https://github.com/DanieII"
+                    class="group flex items-center gap-1 text-secondary-color"
+                >
+                    <GitHubLogo class="group-hover:fill-primary-color" />
+                    GitHub
+                </a>
+                <a
+                    href="https://www.linkedin.com/in/daniel-bogdanov-6958ba258/"
+                    class="group flex items-center gap-1 text-secondary-color"
+                >
+                    <LinkedInLogo class="group-hover:fill-primary-color" />
+                    LinkedIn
+                </a>
+                <a
+                    href="mailto:danielbogdanov1748@gmail.com"
+                    class="group flex items-center gap-1 text-secondary-color"
+                >
+                    <EnvelopeIcon class="group-hover:fill-primary-color" />
+                    Email
+                </a>
+            </div>
+        </div>
+        <div class="mt-16">
+            <h2 class="mb-4 text-3xl">Personal Projects</h2>
+            <p class="mb-8 text-xl">
+                Below is a selection of projects that I've worked on. You can
+                find more on my <a
+                    href="https://github.com/DanieII"
+                    class="underline">GitHub</a
+                >.
+            </p>
+            <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
+                <Project
+                    title="Accounting Partners"
+                    description="A website for an accounting firm."
+                    url="https://accpartnersltd.com"
+                    image={AccountingPartnersImage}
+                />
+            </div>
+        </div>
     </div>
-    <div class="mt-16">
-      <h2 class="mb-4 text-3xl">Personal Projects</h2>
-      <p class="mb-8 text-xl">
-        Below is a selection of projects that I've worked on. You can find more
-        on my <a href="https://github.com/DanieII" class="underline">GitHub</a>.
-      </p>
-      <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
-        <Project
-          title="Accounting Partners"
-          description="A website for an accounting firm."
-          url="https://accpartnersltd.com"
-          image={AccountingPartnersImage}
-        />
-      </div>
-    </div>
-  </div>
 </Layout>
