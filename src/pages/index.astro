@@ -4,14 +4,10 @@ import Project from "../components/Project.astro";
 import GitHubLogo from "../assets/svg/github.svg";
 import LinkedInLogo from "../assets/svg/linkedin.svg";
 import EnvelopeIcon from "../assets/svg/envelope.svg";
-import BulgariaTrailsImage from "../assets/images/bg-trails.webp";
-import RoccoWoodworkImage from "../assets/images/rocco-woodwork.webp";
-import AccountingPartnersImage from "../assets/images/accounting-partners.webp";
-import PaymentServiceImage from "../assets/images/payment-service.webp";
 ---
 
 <Layout>
-  <div class="container">
+  <div class="container !max-w-screen-md">
     <div>
       <h1 class="text-4xl">
         <b>Hey, I'm Daniel.</b>
@@ -44,35 +40,31 @@ import PaymentServiceImage from "../assets/images/payment-service.webp";
       </div>
     </div>
     <div class="mt-16">
-      <h2 class="mb-4 text-3xl">Personal Projects</h2>
+      <h2 class="mb-4 text-3xl font-bold">Personal Projects</h2>
       <p class="mb-8 text-xl">
         Below is a selection of projects that I've worked on. You can find more
         on my <a href="https://github.com/DanieII" class="underline">GitHub</a>.
       </p>
-      <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
+      <div class="grid grid-cols-1 gap-8">
+        <Project
+          title="Talk To You AI"
+          description="A Next.js web app for practicing English by talking to an AI"
+          url="https://github.com/DanieII/talk-to-you"
+        />
         <Project
           title="Bulgaria Trails"
-          description="Explore Bulgaria's hiking trails."
+          description="A MERN stack web app for finding hiking trails in Bulgaria"
           url="https://github.com/DanieII/bg-trails"
-          image={BulgariaTrailsImage}
         />
         <Project
           title="Rocco Woodwork"
-          description="Online shop for handmade wooden products."
+          description="An online store for handmade wooden products made with Django"
           url="https://github.com/DanieII/RoccoWoodwork"
-          image={RoccoWoodworkImage}
         />
         <Project
           title="Accounting Partners"
-          description="Modern website for an accounting firm."
+          description="A modern website for an accounting firm"
           url="https://accpartnersltd.com"
-          image={AccountingPartnersImage}
-        />
-        <Project
-          title="Payment Service"
-          description="Hackaton project for a service marketplace with integrated payments."
-          url="https://github.com/DanieII/Payment-Service-Solution"
-          image={PaymentServiceImage}
         />
       </div>
     </div>
