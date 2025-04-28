@@ -1,72 +1,50 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Project from "../components/Project.astro";
 import GitHubLogo from "../assets/svg/github.svg";
 import LinkedInLogo from "../assets/svg/linkedin.svg";
 import EnvelopeIcon from "../assets/svg/envelope.svg";
+import Projects from "../components/Projects.astro";
 ---
 
 <Layout>
-  <div class="container !max-w-screen-md">
-    <div>
+  <div class="container">
+    <div class="space-y-4 pb-8">
       <h1 class="text-4xl">
         <b>Hey, I'm Daniel.</b>
-        <span class="block text-2xl text-accent-color">
+        <span class="block text-2xl">
           I'm a software developer from Sofia.
         </span>
       </h1>
-      <div class="mt-4 flex gap-4 text-lg">
+      <div class="flex gap-4 text-lg">
         <a
           href="https://github.com/DanieII"
-          class="group flex items-center gap-1 text-secondary-color"
+          class="group flex items-center gap-2 transition-transform duration-200 hover:scale-110"
         >
-          <GitHubLogo class="group-hover:fill-primary-color" />
+          <GitHubLogo
+            class="transition-transform duration-200 group-hover:rotate-[360deg]"
+          />
           GitHub
         </a>
         <a
           href="https://www.linkedin.com/in/daniel-bogdanov-6958ba258/"
-          class="group flex items-center gap-1 text-secondary-color"
+          class="group flex items-center gap-2 transition-transform duration-200 hover:scale-110"
         >
-          <LinkedInLogo class="group-hover:fill-primary-color" />
+          <LinkedInLogo
+            class="transition-transform duration-200 group-hover:rotate-[360deg]"
+          />
           LinkedIn
         </a>
         <a
-          href="mailto:danielbogdanov1748@gmail.com"
-          class="group flex items-center gap-1 text-secondary-color"
+          href="mailto:me@danielbogdanov.me"
+          class="group flex items-center gap-2 transition-transform duration-200 hover:scale-110"
         >
-          <EnvelopeIcon class="group-hover:fill-primary-color" />
+          <EnvelopeIcon
+            class="transition-transform duration-200 group-hover:rotate-[360deg]"
+          />
           Email
         </a>
       </div>
     </div>
-    <div class="mt-16">
-      <h2 class="mb-4 text-3xl font-bold">Personal Projects</h2>
-      <p class="mb-8 text-xl">
-        Below is a selection of projects that I've worked on. You can find more
-        on my <a href="https://github.com/DanieII" class="underline">GitHub</a>.
-      </p>
-      <div class="grid grid-cols-1 gap-8">
-        <Project
-          title="Talk To You AI"
-          description="A Next.js web app for practicing English by talking to an AI"
-          url="https://github.com/DanieII/talk-to-you"
-        />
-        <Project
-          title="Bulgaria Trails"
-          description="A MERN stack web app for finding hiking trails in Bulgaria"
-          url="https://github.com/DanieII/bg-trails"
-        />
-        <Project
-          title="Rocco Woodwork"
-          description="An online store for handmade wooden products made with Django"
-          url="https://github.com/DanieII/RoccoWoodwork"
-        />
-        <Project
-          title="Accounting Partners"
-          description="A modern website for an accounting firm"
-          url="https://accpartnersltd.com"
-        />
-      </div>
-    </div>
+    <Projects />
   </div>
 </Layout>

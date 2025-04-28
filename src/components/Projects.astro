@@ -1,0 +1,31 @@
+---
+import Project from "../components/Project.astro";
+
+const projects = [
+  {
+    title: "Rocco Woodwork",
+    description: "E-commerce store for handmade products",
+    url: "https://roccowoodwork.com",
+  },
+  {
+    title: "Accounting Partners",
+    description: "Website for an accounting firm",
+    url: "https://accpartnersltd.com",
+  },
+];
+---
+
+<div class="space-y-4 py-8">
+  <h2 class="text-3xl font-bold">Projects</h2>
+  <div class="grid grid-cols-1 gap-4">
+    {
+      projects.map((project) => (
+        <Project
+          title={project.title}
+          description={project.description}
+          url={project.url}
+        />
+      ))
+    }
+  </div>
+</div>
