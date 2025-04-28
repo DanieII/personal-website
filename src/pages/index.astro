@@ -1,9 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import GitHubLogo from "../assets/svg/github.svg";
-import LinkedInLogo from "../assets/svg/linkedin.svg";
-import EnvelopeIcon from "../assets/svg/envelope.svg";
 import Projects from "../components/Projects.astro";
+import GitHub from "../components/icons/GitHub.astro";
+import LinkedIn from "../components/icons/LinkedIn.astro";
+import Email from "../components/icons/Email.astro";
 ---
 
 <Layout>
@@ -20,7 +20,7 @@ import Projects from "../components/Projects.astro";
           href="https://github.com/DanieII"
           class="group flex items-center gap-2 transition-transform duration-200 hover:scale-110"
         >
-          <GitHubLogo
+          <GitHub
             class="transition-transform duration-200 group-hover:rotate-[360deg]"
           />
           GitHub
@@ -29,7 +29,7 @@ import Projects from "../components/Projects.astro";
           href="https://www.linkedin.com/in/daniel-bogdanov-6958ba258/"
           class="group flex items-center gap-2 transition-transform duration-200 hover:scale-110"
         >
-          <LinkedInLogo
+          <LinkedIn
             class="transition-transform duration-200 group-hover:rotate-[360deg]"
           />
           LinkedIn
@@ -38,7 +38,7 @@ import Projects from "../components/Projects.astro";
           href="mailto:me@danielbogdanov.me"
           class="group flex items-center gap-2 transition-transform duration-200 hover:scale-110"
         >
-          <EnvelopeIcon
+          <Email
             class="transition-transform duration-200 group-hover:rotate-[360deg]"
           />
           Email
