@@ -4,44 +4,30 @@ import Projects from "../components/Projects.astro";
 import GitHub from "../components/icons/GitHub.astro";
 import LinkedIn from "../components/icons/LinkedIn.astro";
 import Email from "../components/icons/Email.astro";
+import Twitter from "../components/icons/Twitter.astro";
 ---
 
 <Layout>
-  <div class="container">
-    <div class="space-y-4 pb-8">
-      <h1 class="text-4xl">
-        <b>Hey, I'm Daniel.</b>
+  <div class="container space-y-12">
+    <div class="space-y-8">
+      <h1 class="space-y-4 text-4xl">
+        <span class="font-bold">Hey, I'm Daniel</span>.
         <span class="block text-2xl">
           I'm a software developer from Sofia.
         </span>
       </h1>
-      <div class="flex gap-4 text-lg">
-        <a
-          href="https://github.com/DanieII"
-          class="group flex items-center gap-2 transition-transform duration-200 hover:scale-110"
-        >
-          <GitHub
-            class="transition-transform duration-200 group-hover:rotate-[360deg]"
-          />
-          GitHub
+      <div class="flex gap-4">
+        <a href="mailto:me@danielbogdanov.me">
+          <Email />
         </a>
-        <a
-          href="https://www.linkedin.com/in/daniel-bogdanov-6958ba258/"
-          class="group flex items-center gap-2 transition-transform duration-200 hover:scale-110"
-        >
-          <LinkedIn
-            class="transition-transform duration-200 group-hover:rotate-[360deg]"
-          />
-          LinkedIn
+        <a href="https://x.com/DanielBogdanov0">
+          <Twitter />
         </a>
-        <a
-          href="mailto:me@danielbogdanov.me"
-          class="group flex items-center gap-2 transition-transform duration-200 hover:scale-110"
-        >
-          <Email
-            class="transition-transform duration-200 group-hover:rotate-[360deg]"
-          />
-          Email
+        <a href="https://www.linkedin.com/in/daniel-bogdanov-6958ba258/">
+          <LinkedIn />
+        </a>
+        <a href="https://github.com/DanieII">
+          <GitHub />
         </a>
       </div>
     </div>
