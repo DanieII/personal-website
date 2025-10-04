@@ -1,36 +1,55 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Projects from "../components/Projects.astro";
-import GitHub from "../components/icons/GitHub.astro";
-import LinkedIn from "../components/icons/LinkedIn.astro";
-import Email from "../components/icons/Email.astro";
-import Twitter from "../components/icons/Twitter.astro";
+const title = "Daniel Bogdanov";
+const description = "Daniel Bogdanov's personal website";
 ---
 
-<Layout>
-  <div class="container space-y-12">
-    <div class="space-y-8">
-      <h1 class="space-y-4 text-4xl">
-        <span class="font-bold">Hey, I'm Daniel</span>.
-        <span class="block text-2xl">
-          I'm a software developer from Sofia.
-        </span>
-      </h1>
-      <div class="flex gap-4">
-        <a href="mailto:me@danielbogdanov.me">
-          <Email />
-        </a>
-        <a href="https://x.com/DanielBogdanov0">
-          <Twitter />
-        </a>
-        <a href="https://www.linkedin.com/in/daniel-bogdanov-6958ba258/">
-          <LinkedIn />
-        </a>
-        <a href="https://github.com/DanieII">
-          <GitHub />
-        </a>
+<Layout title={title} description={description}>
+  <div class="mx-auto max-w-xl space-y-8 px-4 py-12">
+    <div class="space-y-6">
+      <h1 class="text-2xl font-extrabold">Daniel Bogdanov</h1>
+      <p>
+        <a href="mailto:me@danielbogdanov.me" class="link underline">Email</a> |
+        <a
+          href="https://www.linkedin.com/in/daniel-bogdanov-6958ba258/"
+          class="link underline"
+          target="_blank">LinkedIn</a
+        > |
+        <a
+          href="https://github.com/DanieII"
+          class="link underline"
+          target="_blank">GitHub</a
+        > |
+        <a
+          href="https://x.com/DanielBogdanov0"
+          class="link underline"
+          target="_blank">X</a
+        >
+      </p>
+      <div class="space-y-4">
+        <p>I develop web applications using modern technologies.</p>
+        <p>
+          My focus is on building meaningful software and connecting with
+          like-minded individuals.
+        </p>
+        <p>
+          Explore my projects on <a
+            href="https://github.com/DanieII"
+            class="link underline"
+            target="_blank">GitHub</a
+          >.
+        </p>
+      </div>
+      <div class="space-y-4">
+        <h2 class="text-xl font-bold">Tech Stack</h2>
+        <ul class="ml-6 list-disc">
+          <li>TypeScript</li>
+          <li>Python</li>
+          <li>React</li>
+          <li>Django</li>
+          <li>Tailwind CSS</li>
+        </ul>
       </div>
     </div>
-    <Projects />
   </div>
 </Layout>

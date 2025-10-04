@@ -1,10 +1,9 @@
 ---
-import ThemeToggle from "./ThemeToggle.astro";
+const { pathname } = Astro.url;
 ---
 
 <nav>
-  <div class="container flex justify-between">
-    <a href="/" class="text-lg font-bold uppercase">Daniel Bogdanov</a>
-    <ThemeToggle />
+  <div class="mx-auto flex max-w-xl gap-4 px-4 py-8">
+    <a href="/" class={`link ${pathname === "/" ? "active" : ""}`}>me</a>
   </div>
 </nav>

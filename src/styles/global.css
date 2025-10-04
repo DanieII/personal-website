@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+    --color-background: #181616;
+    --color-foreground: #c5c9c5;
+    --color-selection-background: #2D4F67;
+    --color-selection-foreground: #C8C093;
+    --color-link: #72A7BC;
+}
+
+@font-face {
+    font-family: 'Hack';
+    src: url('/fonts/hack-regular.woff') format('woff'),
+        url('/fonts/hack-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: 'Hack', monospace;
+}
+
+.link {
+    font-weight: bold;
+    color: var(--color-link);
+}
+
+.link:hover,
+.link.active {
+    background-color: var(--color-selection-background);
+    color: var(--color-selection-foreground);
+}
