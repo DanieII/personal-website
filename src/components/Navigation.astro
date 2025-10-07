@@ -5,8 +5,9 @@ const { pathname } = Astro.url;
 <nav>
   <div class="mx-auto max-w-xl space-x-2 px-4 py-8">
     <a href="/" class={`link ${pathname === "/" ? "active" : ""}`}>me</a>
-    <a href="/blog" class={`link ${pathname === "/blog" ? "active" : ""}`}
-      >blog</a
+    <a
+      href="/blog"
+      class={`link ${pathname.startsWith("/blog") ? "active" : ""}`}>blog</a
     >
   </div>
 </nav>
