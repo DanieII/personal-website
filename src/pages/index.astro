@@ -1,55 +1,42 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 const title = "Daniel Bogdanov";
 const description = "Daniel Bogdanov's personal website";
 ---
 
-<Layout title={title} description={description}>
-  <div class="mx-auto max-w-xl space-y-8 px-4 py-12">
-    <div class="space-y-6">
-      <h1 class="text-2xl font-extrabold">Daniel Bogdanov</h1>
-      <p>
-        <a href="mailto:me@danielbogdanov.me" class="link underline">Email</a> |
-        <a
-          href="https://www.linkedin.com/in/daniel-bogdanov-6958ba258/"
-          class="link underline"
-          target="_blank">LinkedIn</a
-        > |
-        <a
-          href="https://github.com/DanieII"
-          class="link underline"
-          target="_blank">GitHub</a
-        > |
-        <a
-          href="https://x.com/DanielBogdanov0"
-          class="link underline"
-          target="_blank">X</a
-        >
-      </p>
-      <div class="space-y-4">
-        <p>I develop web applications using modern technologies.</p>
-        <p>
-          My focus is on building meaningful software and connecting with
-          like-minded individuals.
-        </p>
-        <p>
-          Explore my projects on <a
-            href="https://github.com/DanieII"
-            class="link underline"
-            target="_blank">GitHub</a
-          >.
-        </p>
-      </div>
-      <div class="space-y-4">
-        <h2 class="text-xl font-bold">Tech Stack</h2>
-        <ul class="ml-6 list-disc">
-          <li>TypeScript</li>
-          <li>Python</li>
-          <li>React</li>
-          <li>Django</li>
-          <li>Tailwind CSS</li>
-        </ul>
-      </div>
+<BaseLayout title={title} description={description}>
+    <div class="space-y-8">
+        <div class="space-y-4">
+            <h1 class="text-2xl font-extrabold">Daniel Bogdanov</h1>
+            <p>
+                <a href="mailto:me@danielbogdanov.me" class="link">Email</a> |
+                <a href="https://www.linkedin.com/in/daniel-bogdanov-6958ba258/" class="link"
+                    target="_blank">LinkedIn</a> |
+                <a href="https://github.com/DanieII" class="link" target="_blank">GitHub</a> |
+                <a href="https://x.com/DanielBogdanov0" class="link" target="_blank">X</a>
+            </p>
+        </div>
+        <div class="space-y-4">
+            <p>
+                I am a web developer who enjoys building software. I keep
+                improving my workflow and exploring new technologies while
+                keeping things minimal. My <a href="https://github.com/DanieII/nvim-config" class="link"
+                    target="_blank">Neovim</a> configuration is a big part of that.
+            </p>
+            <p>
+                On my <a href="/blog" class="link">blog</a>, I share tutorials
+                on software development.
+            </p>
+        </div>
+        <div class="space-y-4">
+            <h2 class="text-xl font-bold">Tech Stack</h2>
+            <ul class="ml-6 list-disc">
+                <li>TypeScript</li>
+                <li>Python</li>
+                <li>React</li>
+                <li>Django</li>
+                <li>Tailwind CSS</li>
+            </ul>
+        </div>
     </div>
-  </div>
-</Layout>
+</BaseLayout>

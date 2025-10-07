@@ -1,0 +1,22 @@
+---
+import { getCollection, type CollectionEntry } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PostList from "../../components/PostList.astro";
+
+type BlogEntry = CollectionEntry<"blog">;
+
+const title = "Daniel Bogdanov's Blog";
+const description = "A collection of blog posts by Daniel Bogdanov.";
+
+const posts = (await getCollection("blog")).sort(
+  (a: BlogEntry, b: BlogEntry) =>
+    b.data.publicationDate.getTime() - a.data.publicationDate.getTime(),
+);
+---
+
+<BaseLayout title={title} description={description}>
+  <div class="space-y-8">
+    <h1 class="text-2xl font-extrabold">Blog</h1>
+    <PostList posts={posts} />
+  </div>
+</BaseLayout>
